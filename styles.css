@@ -363,6 +363,646 @@ body {
   border-top: 1px solid #eee;
 }
 
+/* Events Schedule Section */
+.events {
+  padding: 100px 0;
+  background: white;
+}
+
+.events-table-container {
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.events-table thead {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.events-table th {
+  padding: 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.events-table tbody tr {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.3s ease;
+}
+
+.events-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.events-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.events-table td {
+  padding: 1.5rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.events-table td:first-child {
+  font-weight: 600;
+  color: #2c5aa0;
+  min-width: 150px;
+}
+
+.events-table td:nth-child(2) {
+  font-weight: 500;
+  color: #333;
+  min-width: 200px;
+}
+
+/* HIV/AIDS Policy Section */
+.policy {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.policy-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.policy-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.policy-item:hover {
+  transform: translateY(-5px);
+}
+
+.policy-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.policy-icon i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.policy-text {
+  flex: 1;
+}
+
+.policy-text h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c5aa0;
+  margin-bottom: 0.5rem;
+}
+
+.policy-text p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Marketing Plan Section */
+.marketing {
+  padding: 100px 0;
+  background: white;
+}
+
+.marketing-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c5aa0;
+  margin: 3rem 0 2rem;
+  text-align: center;
+}
+
+/* Main Objective */
+.marketing-objective {
+  margin-top: 2rem;
+}
+
+.objective-card {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.objective-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.objective-icon i {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.objective-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.objective-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+/* Targeted Audiences */
+.marketing-audiences {
+  margin-top: 3rem;
+}
+
+.audiences-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.audience-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.audience-card:hover {
+  transform: translateY(-5px);
+}
+
+.audience-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.audience-icon i {
+  font-size: 2rem;
+  color: white;
+}
+
+.audience-card h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c5aa0;
+  margin-bottom: 1rem;
+}
+
+.audience-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Main Channels */
+.marketing-channels {
+  margin-top: 3rem;
+}
+
+.channels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.channel-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.channel-card:hover {
+  transform: translateY(-5px);
+}
+
+.channel-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.channel-header i {
+  font-size: 1.8rem;
+  color: #667eea;
+}
+
+.channel-header h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c5aa0;
+  margin: 0;
+}
+
+.channel-content {
+  color: #666;
+  line-height: 1.6;
+}
+
+.channel-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.channel-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.channel-item-icon {
+  width: 40px;
+  height: 40px;
+  background: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.channel-item-icon i {
+  font-size: 1.2rem;
+  color: #667eea;
+}
+
+.channel-item-text {
+  flex: 1;
+}
+
+.channel-item-text strong {
+  display: block;
+  color: #2c5aa0;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.channel-item-text p {
+  color: #666;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.social-media-card {
+  grid-column: span 2;
+}
+
+/* Plan of Action */
+.marketing-action {
+  margin-top: 3rem;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.action-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+}
+
+.action-number {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.action-content {
+  flex: 1;
+}
+
+.action-content h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c5aa0;
+  margin-bottom: 0.5rem;
+}
+
+.action-content p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Online Reputation Management Strategy Section */
+.reputation {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.reputation-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #2c5aa0;
+  margin: 3rem 0 2rem;
+  text-align: center;
+}
+
+/* Main Objective */
+.reputation-objective {
+  margin-top: 2rem;
+}
+
+.reputation-objective-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.reputation-objective-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.reputation-objective-icon i {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.reputation-objective-content h3 {
+  font-size: 1.8rem;
+  color: #2c5aa0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.reputation-objective-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+}
+
+/* Main Components */
+.reputation-components {
+  margin-top: 3rem;
+}
+
+.components-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.component-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.component-card:hover {
+  transform: translateY(-5px);
+}
+
+.component-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+
+.component-icon i {
+  font-size: 2rem;
+  color: white;
+}
+
+.component-card h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c5aa0;
+  margin-bottom: 1rem;
+}
+
+.component-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Plan of Action */
+.reputation-action {
+  margin-top: 3rem;
+}
+
+.reputation-action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.reputation-action-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.reputation-action-card:hover {
+  transform: translateY(-5px);
+}
+
+.reputation-action-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.reputation-action-icon i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.reputation-action-content {
+  flex: 1;
+}
+
+.reputation-action-content h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c5aa0;
+  margin-bottom: 0.5rem;
+}
+
+.reputation-action-content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Social Platforms Links */
+.social-platforms-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.platform-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: #f8f9fa;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.platform-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.platform-link i {
+  font-size: 1.1rem;
+}
+
+.platform-link.facebook:hover {
+  background: #1877f2;
+  color: white;
+}
+
+.platform-link.instagram:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color: white;
+}
+
+.platform-link.twitter:hover {
+  background: #1da1f2;
+  color: white;
+}
+
+.platform-link.youtube:hover {
+  background: #ff0000;
+  color: white;
+}
+
+/* Monitoring Platforms */
+.monitoring-platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.monitoring-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: #f8f9fa;
+  border-radius: 25px;
+  color: #333;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.monitoring-item i {
+  font-size: 1.1rem;
+  color: #667eea;
+}
+
 /* Press Release Section */
 .press-release {
   padding: 100px 0;
@@ -607,6 +1247,89 @@ body {
 
   .press-header h3 {
     font-size: 1.5rem;
+  }
+
+  .events-table {
+    font-size: 0.9rem;
+  }
+
+  .events-table th,
+  .events-table td {
+    padding: 1rem;
+  }
+
+  .policy-content {
+    grid-template-columns: 1fr;
+  }
+
+  .policy-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .policy-icon {
+    margin: 0 auto;
+  }
+
+  .objective-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .objective-icon {
+    margin: 0 auto;
+  }
+
+  .audiences-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .channels-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-media-card {
+    grid-column: span 1;
+  }
+
+  .action-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reputation-objective-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .reputation-objective-icon {
+    margin: 0 auto;
+  }
+
+  .components-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reputation-action-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reputation-action-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reputation-action-icon {
+    margin: 0 auto;
+  }
+
+  .social-platforms-links {
+    justify-content: center;
+  }
+
+  .monitoring-platforms {
+    justify-content: center;
   }
 }
 
