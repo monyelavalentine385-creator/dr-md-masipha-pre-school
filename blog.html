@@ -11,9 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         .blog-container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 120px 20px 60px;
+        }
+
+        /* Inner content wrapper for optimal blog readability */
+        .blog-content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .blog-header {
@@ -202,7 +208,7 @@
 
         .team-showcase-img {
             width: 100%;
-            max-width: 600px;
+            max-width: 100%;
             height: auto;
             border-radius: 10px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -210,7 +216,7 @@
         }
 
         .team-description {
-            max-width: 600px;
+            max-width: 100%;
             margin: 0 auto;
             padding: 1rem;
             background: #f8f9fa;
@@ -277,11 +283,12 @@
 
     <!-- Blog Content -->
     <div class="blog-container">
-        <a href="index.html" class="back-to-home">
-            <i class="fas fa-arrow-left"></i> Back to Home
-        </a>
+        <div class="blog-content-wrapper">
+            <a href="index.html" class="back-to-home">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
 
-        <article class="blog-content">
+            <article class="blog-content">
             <header class="blog-header">
                 <h1 class="blog-title">Influencing, Growing, and Nurturing Future Talented Individuals</h1>
                 <div class="blog-meta">
@@ -469,24 +476,24 @@
                         </thead>
                         <tbody>
                             <tr style="border-bottom: 1px solid #eee; transition: background-color 0.3s ease;">
-                                <td style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 600; color: #2c5aa0; min-width: 150px;">14 February 2025</td>
-                                <td style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 500; color: #333; min-width: 200px;">Valentine's Day Celebration</td>
-                                <td style="padding: 1.5rem; color: #666; line-height: 1.6;">Spreading love and kindness with activities and crafting's for the kids on the day where people celebrate love.</td>
+                                <td data-label="Event Date" style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 600; color: #2c5aa0; min-width: 150px;">14 February 2025</td>
+                                <td data-label="Event Name" style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 500; color: #333; min-width: 200px;">Valentine's Day Celebration</td>
+                                <td data-label="Description" style="padding: 1.5rem; color: #666; line-height: 1.6;">Spreading love and kindness with activities and crafting's for the kids on the day where people celebrate love.</td>
                             </tr>
                             <tr style="border-bottom: 1px solid #eee; transition: background-color 0.3s ease;">
-                                <td style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 600; color: #2c5aa0; min-width: 150px;">25 July 2025</td>
-                                <td style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 500; color: #333; min-width: 200px;">Pyjama Day</td>
-                                <td style="padding: 1.5rem; color: #666; line-height: 1.6;">A fun day where kids come to school with their favourite PJs/Pyjamas and enjoy movie time and games</td>
+                                <td data-label="Event Date" style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 600; color: #2c5aa0; min-width: 150px;">25 July 2025</td>
+                                <td data-label="Event Name" style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 500; color: #333; min-width: 200px;">Pyjama Day</td>
+                                <td data-label="Description" style="padding: 1.5rem; color: #666; line-height: 1.6;">A fun day where kids come to school with their favourite PJs/Pyjamas and enjoy movie time and games</td>
                             </tr>
                             <tr style="border-bottom: 1px solid #eee; transition: background-color 0.3s ease;">
-                                <td style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 600; color: #2c5aa0; min-width: 150px;">26 September 2025</td>
-                                <td style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 500; color: #333; min-width: 200px;">Heritage Day Celebration</td>
-                                <td style="padding: 1.5rem; color: #666; line-height: 1.6;">Celebrating South African heritage with traditional music, dances, clothes and cultural activities with the kids at the Pre-school.</td>
+                                <td data-label="Event Date" style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 600; color: #2c5aa0; min-width: 150px;">26 September 2025</td>
+                                <td data-label="Event Name" style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 500; color: #333; min-width: 200px;">Heritage Day Celebration</td>
+                                <td data-label="Description" style="padding: 1.5rem; color: #666; line-height: 1.6;">Celebrating South African heritage with traditional music, dances, clothes and cultural activities with the kids at the Pre-school.</td>
                             </tr>
                             <tr style="border-bottom: none;">
-                                <td style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 600; color: #2c5aa0; min-width: 150px;">10 December 2025</td>
-                                <td style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 500; color: #333; min-width: 200px;">Graduation Ceremony</td>
-                                <td style="padding: 1.5rem; color: #666; line-height: 1.6;">Celebrating the achievements of our pre-school graduates with families and friends.</td>
+                                <td data-label="Event Date" style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 600; color: #2c5aa0; min-width: 150px;">10 December 2025</td>
+                                <td data-label="Event Name" style="padding: 1.5rem; color: #666; line-height: 1.6; font-weight: 500; color: #333; min-width: 200px;">Graduation Ceremony</td>
+                                <td data-label="Description" style="padding: 1.5rem; color: #666; line-height: 1.6;">Celebrating the achievements of our pre-school graduates with families and friends.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -609,6 +616,91 @@
                 </div>
             </section>
 
+            <!-- Online Reputation Management Strategy Section -->
+            <section class="blog-section">
+                <h2>Online Reputation Management Strategy</h2>
+
+                <div class="highlight-box">
+                    <div style="display: flex; align-items: center; gap: 1.5rem;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <i class="fas fa-star" style="font-size: 1.8rem; color: white;"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-top: 0; color: #2c5aa0; font-size: 1.5rem;">Main Objective</h3>
+                            <p style="margin-bottom: 0;">To maintain a positive online presence and to be able to respond and give feedback perfectly and accurately about any concerns or issues related to the pre-school.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="font-size: 1.5rem; font-weight: 600; color: #2c5aa0; margin: 2rem 0 1rem;">Main Components</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
+                    <div class="success-story">
+                        <h4 style="color: #2c5aa0; margin-bottom: 0.5rem;"><i class="fas fa-shield-alt"></i> Crisis Management</h4>
+                        <p style="margin: 0;">Always have a strategy in place for handling negative situations that can have a negative impact on the pre-school.</p>
+                    </div>
+                    <div class="success-story">
+                        <h4 style="color: #2c5aa0; margin-bottom: 0.5rem;"><i class="fas fa-pen-fancy"></i> Creating Content</h4>
+                        <p style="margin: 0;">Sharing positive stories and testimonies to keep a good reputation for the pre-school is very crucial.</p>
+                    </div>
+                    <div class="success-story">
+                        <h4 style="color: #2c5aa0; margin-bottom: 0.5rem;"><i class="fas fa-search"></i> Monitoring</h4>
+                        <p style="margin: 0;">Tracking any mentions on social platforms, google and reading all reviews to understand any issues or concerns regarding the pre-school is crucial and it will help in planning ways to address them.</p>
+                    </div>
+                </div>
+
+                <h3 style="font-size: 1.5rem; font-weight: 600; color: #2c5aa0; margin: 2rem 0 1rem;">Plan of Action</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
+                    <div class="success-story">
+                        <h4 style="color: #2c5aa0; margin-bottom: 0.5rem;"><i class="fas fa-chalkboard-teacher"></i> Staff Training</h4>
+                        <p style="margin: 0;">Train staff members on how to respond to online feedback positively whether bad or good.</p>
+                    </div>
+                    <div class="success-story">
+                        <h4 style="color: #2c5aa0; margin-bottom: 0.5rem;"><i class="fas fa-sync-alt"></i> Regular Updates</h4>
+                        <p style="margin-bottom: 1rem;">Regularly updates are crucial on all social media platforms with positive contents and updates to ensure the public and the locals understand the importance of having the NPO.</p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                            <a href="https://www.facebook.com/profile.php?id=61579230827816" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; text-decoration: none; color: #333; font-size: 0.85rem; font-weight: 500;">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/drmdmasipa?igsh=MXhwMzh3dGxrcmlvaA==" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; text-decoration: none; color: #333; font-size: 0.85rem; font-weight: 500;">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://x.com/DrMasipa?t=oKwcl0yP5gQ2kUakkVsFhw&s=09" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; text-decoration: none; color: #333; font-size: 0.85rem; font-weight: 500;">
+                                <i class="fab fa-twitter"></i>
+                                <span>X (Twitter)</span>
+                            </a>
+                            <a href="https://www.youtube.com/@DrMasipa" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; text-decoration: none; color: #333; font-size: 0.85rem; font-weight: 500;">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="success-story">
+                        <h4 style="color: #2c5aa0; margin-bottom: 0.5rem;"><i class="fas fa-bell"></i> Utilize Alerts</h4>
+                        <p style="margin-bottom: 1rem;">The pre-school should utilise alerts for all mentions of the pre-school whether on google, Facebook, Instagram or X (Twitter) which can help in engagement and understanding the concerns raised by the locals and what can be improved to better the organisation's reputation.</p>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                            <div style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; color: #333; font-size: 0.85rem; font-weight: 500;">
+                                <i class="fab fa-google" style="color: #667eea;"></i>
+                                <span>Google</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; color: #333; font-size: 0.85rem; font-weight: 500;">
+                                <i class="fab fa-facebook" style="color: #667eea;"></i>
+                                <span>Facebook</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; color: #333; font-size: 0.85rem; font-weight: 500;">
+                                <i class="fab fa-instagram" style="color: #667eea;"></i>
+                                <span>Instagram</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; color: #333; font-size: 0.85rem; font-weight: 500;">
+                                <i class="fab fa-twitter" style="color: #667eea;"></i>
+                                <span>X (Twitter)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Marketing Plan Section -->
             <section class="blog-section">
                 <h2>Integrated Brand Marketing Plan</h2>
@@ -715,91 +807,6 @@
                 </div>
             </section>
 
-            <!-- Online Reputation Management Strategy Section -->
-            <section class="blog-section">
-                <h2>Online Reputation Management Strategy</h2>
-
-                <div class="highlight-box">
-                    <div style="display: flex; align-items: center; gap: 1.5rem;">
-                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                            <i class="fas fa-star" style="font-size: 1.8rem; color: white;"></i>
-                        </div>
-                        <div>
-                            <h3 style="margin-top: 0; color: #2c5aa0; font-size: 1.5rem;">Main Objective</h3>
-                            <p style="margin-bottom: 0;">To maintain a positive online presence and to be able to respond and give feedback perfectly and accurately about any concerns or issues related to the pre-school.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <h3 style="font-size: 1.5rem; font-weight: 600; color: #2c5aa0; margin: 2rem 0 1rem;">Main Components</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
-                    <div class="success-story">
-                        <h4 style="color: #2c5aa0; margin-bottom: 0.5rem;"><i class="fas fa-shield-alt"></i> Crisis Management</h4>
-                        <p style="margin: 0;">Always have a strategy in place for handling negative situations that can have a negative impact on the pre-school.</p>
-                    </div>
-                    <div class="success-story">
-                        <h4 style="color: #2c5aa0; margin-bottom: 0.5rem;"><i class="fas fa-pen-fancy"></i> Creating Content</h4>
-                        <p style="margin: 0;">Sharing positive stories and testimonies to keep a good reputation for the pre-school is very crucial.</p>
-                    </div>
-                    <div class="success-story">
-                        <h4 style="color: #2c5aa0; margin-bottom: 0.5rem;"><i class="fas fa-search"></i> Monitoring</h4>
-                        <p style="margin: 0;">Tracking any mentions on social platforms, google and reading all reviews to understand any issues or concerns regarding the pre-school is crucial and it will help in planning ways to address them.</p>
-                    </div>
-                </div>
-
-                <h3 style="font-size: 1.5rem; font-weight: 600; color: #2c5aa0; margin: 2rem 0 1rem;">Plan of Action</h3>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
-                    <div class="success-story">
-                        <h4 style="color: #2c5aa0; margin-bottom: 0.5rem;"><i class="fas fa-chalkboard-teacher"></i> Staff Training</h4>
-                        <p style="margin: 0;">Train staff members on how to respond to online feedback positively whether bad or good.</p>
-                    </div>
-                    <div class="success-story">
-                        <h4 style="color: #2c5aa0; margin-bottom: 0.5rem;"><i class="fas fa-sync-alt"></i> Regular Updates</h4>
-                        <p style="margin-bottom: 1rem;">Regularly updates are crucial on all social media platforms with positive contents and updates to ensure the public and the locals understand the importance of having the NPO.</p>
-                        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-                            <a href="https://www.facebook.com/profile.php?id=61579230827816" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; text-decoration: none; color: #333; font-size: 0.85rem; font-weight: 500;">
-                                <i class="fab fa-facebook"></i>
-                                <span>Facebook</span>
-                            </a>
-                            <a href="https://www.instagram.com/drmdmasipa?igsh=MXhwMzh3dGxrcmlvaA==" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; text-decoration: none; color: #333; font-size: 0.85rem; font-weight: 500;">
-                                <i class="fab fa-instagram"></i>
-                                <span>Instagram</span>
-                            </a>
-                            <a href="https://x.com/DrMasipa?t=oKwcl0yP5gQ2kUakkVsFhw&s=09" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; text-decoration: none; color: #333; font-size: 0.85rem; font-weight: 500;">
-                                <i class="fab fa-twitter"></i>
-                                <span>X (Twitter)</span>
-                            </a>
-                            <a href="https://www.youtube.com/@DrMasipa" target="_blank" style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; text-decoration: none; color: #333; font-size: 0.85rem; font-weight: 500;">
-                                <i class="fab fa-youtube"></i>
-                                <span>YouTube</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="success-story">
-                        <h4 style="color: #2c5aa0; margin-bottom: 0.5rem;"><i class="fas fa-bell"></i> Utilize Alerts</h4>
-                        <p style="margin-bottom: 1rem;">The pre-school should utilise alerts for all mentions of the pre-school whether on google, Facebook, Instagram or X (Twitter) which can help in engagement and understanding the concerns raised by the locals and what can be improved to better the organisation's reputation.</p>
-                        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-                            <div style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; color: #333; font-size: 0.85rem; font-weight: 500;">
-                                <i class="fab fa-google" style="color: #667eea;"></i>
-                                <span>Google</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; color: #333; font-size: 0.85rem; font-weight: 500;">
-                                <i class="fab fa-facebook" style="color: #667eea;"></i>
-                                <span>Facebook</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; color: #333; font-size: 0.85rem; font-weight: 500;">
-                                <i class="fab fa-instagram" style="color: #667eea;"></i>
-                                <span>Instagram</span>
-                            </div>
-                            <div style="display: flex; align-items: center; gap: 0.5rem; padding: 0.5rem 1rem; background: #f8f9fa; border-radius: 20px; color: #333; font-size: 0.85rem; font-weight: 500;">
-                                <i class="fab fa-twitter" style="color: #667eea;"></i>
-                                <span>X (Twitter)</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <section class="blog-section">
                 <h2>Get in Touch</h2>
                 <div class="contact-info">
@@ -845,7 +852,8 @@
                     </div>
                 </div>
             </section>
-        </article>
+            </article>
+        </div>
     </div>
 
     <!-- Footer -->
